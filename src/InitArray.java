@@ -1,9 +1,12 @@
 public class InitArray {
     public static void main(String[] args) {
-        // declara um vetor de int e inicializa com tamanho 10
-        // int[] intArray = new int[10];
-        // Declara um vetor de int e inicializa com valores
-        int[] intArray = { 56, 32, 50, 75, 13, 5, 96, 89, 34, 12 };
+        // declara uma constante com o tamanho do vetor
+        final int ARRAY_LENGTH = 10;  // constante como caixa alta e SERPENT_CASE
+        int[] intArray = new int[ARRAY_LENGTH];
+
+        for (int i = 0; i < intArray.length; i++) {
+            intArray[i] = 2 + 2 * i;
+        }
 
         // Imprime um cabeçalho - Índice Valro
         System.out.printf("%s%8s\n", "Índice", "Valor");
