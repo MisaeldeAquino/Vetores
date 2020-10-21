@@ -17,7 +17,30 @@ public class ArrayListExample {
             System.out.printf(" %s", items.get(i)); // acessa o elemento na posição i
         }
 
-        System.out.printf("\nMostrando elementos com foreach:");
+        displayArrayList(items, "\nMostrando elementos com foreach:");
+
+        items.add("caneta");
+        items.add("borracha");
+
+        displayArrayList(items, "\nMostrando lista com mais dois elementos:");
+
+        items.remove("arroz");
+
+        displayArrayList(items, "\nRemovendo arroz:");
+
+        items.add("bola");
+
+        displayArrayList(items, "\nSegunda bola:");
+
+        items.remove("bola");
+        displayArrayList(items, "\nRemovendo bola:");
+
+        items.remove(1);
+        displayArrayList(items, "\nRemovendo elemento do índice 1:");
+    }
+
+    public static void displayArrayList(ArrayList<String> items, String s) {
+        System.out.printf(s);
 
         for (String item : items) { // para cada item no arraylist items
             System.out.printf(" %s", item); // imprima o item
