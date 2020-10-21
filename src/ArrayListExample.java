@@ -37,6 +37,8 @@ public class ArrayListExample {
 
         items.remove(1);
         displayArrayList(items, "\nRemovendo elemento do índice 1:");
+
+        System.out.printf("\narroz %sestá na lista.", items.contains("arroz") ? "" : "não ");
     }
 
     public static void displayArrayList(ArrayList<String> items, String s) {
