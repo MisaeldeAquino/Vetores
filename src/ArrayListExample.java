@@ -32,8 +32,10 @@ public class ArrayListExample {
 
         displayArrayList(items, "\nSegunda bola:");
 
-        items.remove("bola");
+        while (items.remove("bola")) { } // removendo todas as bolas
         displayArrayList(items, "\nRemovendo bola:");
+
+
 
         items.remove(1);
         displayArrayList(items, "\nRemovendo elemento do índice 1:");
